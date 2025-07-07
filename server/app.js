@@ -1,8 +1,7 @@
-// server/app.js
-
 const express = require("express");
 const mongoose = require("mongoose");
 const cors = require("cors");
+const path = require("path");
 require("dotenv").config();
 
 const app = express();
@@ -18,12 +17,7 @@ const messageRoutes = require("./routes/messageRoutes");
 app.use("/api/projects", projectRoutes);
 app.use("/api/messages", messageRoutes);
 
-// Test Route
-app.get("/", (req, res) => {
-  res.send("Backend is running!");
-});
-
-// ✅ MongoDB connection using correct env variable
+// ✅ MongoDB connection
 mongoose.connect(process.env.MONGO_URI, {
   useNewUrlParser: true,
   useUnifiedTopology: true
@@ -33,7 +27,14 @@ mongoose.connect(process.env.MONGO_URI, {
   console.log("❌ MongoDB connection error:", err);
 });
 
-// Server start
+// ✅ Serve frontend (React build folder)
+app.use(express.static(path.join(__dirname, "../client/build")));
+
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname, "../client/build/index.html"));
+});
+
+// ✅ Start the server
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
   console.log(`🚀 Server is running on port ${PORT}`);

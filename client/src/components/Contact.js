@@ -11,21 +11,21 @@ const Contact = () => {
   };
 
   const handleSubmit = async (e) => {
-    e.preventDefault();
+  e.preventDefault();
 
-    try {
-      await fetch("http://localhost:5000/api/messages", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(formData)
-      });
+  try {
+    await fetch("https://my-reactportfolio.onrender.com/api/messages", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(formData)
+    });
 
-      alert("Message Sent Successfully!");
-      setFormData({ name: '', email: '', message: '' });
-    } catch (error) {
-      alert("Something went wrong.");
-    }
-  };
+    alert("Message Sent Successfully!");
+    setFormData({ name: '', email: '', message: '' });
+  } catch (error) {
+    alert("Something went wrong.");
+  }
+};
 
   return (
     <section id="contact" className="contact-section">
