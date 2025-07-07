@@ -7,11 +7,11 @@ const Resume = () => {
     <section id="resume" className="resume-section">
       <h2>My Resume</h2>
       <p>Download my resume to know more about my qualifications and experience.</p>
-      <a href="/Resume.pdf" download className="download-btn">Download Resume</a>
+      <a href="/resume.pdf" download className="download-btn">Download Resume</a>
 
       {/* Optional Preview */}
       <iframe
-        src="/Resume.pdf"
+        src="/resume.pdf"
         title="Tejaswini Resume"
         width="100%"
         height="500px"

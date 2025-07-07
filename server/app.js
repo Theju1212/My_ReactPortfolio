@@ -6,11 +6,11 @@ require("dotenv").config();
 
 const app = express();
 
-// Middleware
+// ✅ Middleware
 app.use(cors());
 app.use(express.json());
 
-// Routes
+// ✅ Routes
 const projectRoutes = require("./routes/projectRoutes");
 const messageRoutes = require("./routes/messageRoutes");
 
@@ -18,14 +18,13 @@ app.use("/api/projects", projectRoutes);
 app.use("/api/messages", messageRoutes);
 
 // ✅ MongoDB connection
-mongoose.connect(process.env.MONGO_URI, {
-  useNewUrlParser: true,
-  useUnifiedTopology: true
-}).then(() => {
-  console.log("✅ Connected to MongoDB");
-}).catch((err) => {
-  console.log("❌ MongoDB connection error:", err);
-});
+mongoose.connect(process.env.MONGO_URI)
+  .then(() => {
+    console.log("✅ Connected to MongoDB");
+  })
+  .catch((err) => {
+    console.error("❌ MongoDB connection error:", err);
+  });
 
 // ✅ Serve frontend (React build folder)
 app.use(express.static(path.join(__dirname, "../client/build")));
