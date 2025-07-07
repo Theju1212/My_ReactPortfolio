@@ -1,17 +1,16 @@
-// src/components/Skills.js
 import React from 'react';
 import './Skills.css';
 
 const skills = [
-  { name: 'HTML', image: '/assets/html.png' },
-  { name: 'CSS', image: '/assets/css.png' },
-  { name: 'JavaScript', image: '/assets/javascript.png' },
-  { name: 'React', image: '/assets/react.jpeg' },
-  { name: 'MongoDB', image: '/assets/mongodb.png' },
-  { name: 'Postman', image: '/assets/postman.png' },
-  { name: 'Power BI', image: '/assets/powerbi.png' },
-  { name: 'Tableau', image: '/assets/tableau.png' },
-  { name: 'Python', image: '/assets/python.jpeg' },
+  { name: 'HTML', image: `${process.env.PUBLIC_URL}/assets/html.png` },
+  { name: 'CSS', image: `${process.env.PUBLIC_URL}/assets/css.png` },
+  { name: 'JavaScript', image: `${process.env.PUBLIC_URL}/assets/javascript.png` },
+  { name: 'React', image: `${process.env.PUBLIC_URL}/assets/react.jpeg` },
+  { name: 'MongoDB', image: `${process.env.PUBLIC_URL}/assets/mongodb.png` },
+  { name: 'Postman', image: `${process.env.PUBLIC_URL}/assets/postman.png` },
+  { name: 'Power BI', image: `${process.env.PUBLIC_URL}/assets/powerbi.png` },
+  { name: 'Tableau', image: `${process.env.PUBLIC_URL}/assets/tableau.png` },
+  { name: 'Python', image: `${process.env.PUBLIC_URL}/assets/python.jpeg` },
 ];
 
 const Skills = () => {
