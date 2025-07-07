@@ -1,0 +1,47 @@
+.resume-section {
+  background: #0F172A;
+  color: #F8FAFC;
+  padding: 4rem 2rem;
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.resume-section h2 {
+  font-size: 2.5rem;
+  color: #22D3EE;
+  margin-bottom: 1rem;
+}
+
+.resume-section p {
+  color: #94A3B8;
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  max-width: 700px;
+}
+
+.download-btn {
+  background-color: #22D3EE;
+  color: #0F172A;
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  margin-bottom: 2rem;
+}
+
+.download-btn:hover {
+  background-color: #38BDF8;
+}
+
+.resume-preview {
+  border: 2px solid #22D3EE;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(34, 211, 238, 0.4);
+  width: 100%;
+  max-width: 800px;
+  height: 500px;
+}

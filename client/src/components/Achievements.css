@@ -1,0 +1,51 @@
+.achievements-section {
+  padding: 4rem 2rem;
+  background: linear-gradient(to right, #0f172a, #1e293b);
+  color: #f8fafc;
+  text-align: center;
+}
+
+.achievements-section h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #22d3ee;
+  margin-bottom: 2rem;
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+.achievement-list {
+  list-style: none;
+  padding: 0;
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.achievement-item {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  padding-left: 1.5rem;
+  position: relative;
+  line-height: 1.6;
+  color: #e2e8f0;
+}
+
+.achievement-item::before {
+  content: '⭐';
+  position: absolute;
+  left: 0;
+  color: #22d3ee;
+}
+
+/* Animation for smooth fade */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

@@ -1,0 +1,65 @@
+/* src/components/Internship.css */
+
+.internship-section {
+  padding: 4rem 2rem;
+  background: linear-gradient(to right, #0f172a, #1e293b);
+  color: #f8fafc;
+  text-align: center;
+}
+
+.internship-section h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #22d3ee;
+  margin-bottom: 3rem;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.internship-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.intern-card {
+  background-color: #1e293b;
+  border: 2px solid #22d3ee;
+  border-radius: 12px;
+  padding: 1.5rem 2rem;
+  width: 100%;
+  max-width: 700px;
+  text-align: left;
+  box-shadow: 0 10px 25px rgba(34, 211, 238, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.intern-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 30px rgba(34, 211, 238, 0.3);
+}
+
+.intern-card h3 {
+  color: #38bdf8;
+  margin-bottom: 0.5rem;
+  font-size: 1.4rem;
+}
+
+.intern-card p {
+  margin: 0.4rem 0;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Reuse fadeIn animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
