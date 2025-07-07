@@ -1,3 +1,5 @@
+// server/app.js
+
 const express = require("express");
 const mongoose = require("mongoose");
 const cors = require("cors");
@@ -9,20 +11,20 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
+// Routes
 const projectRoutes = require("./routes/projectRoutes");
 const messageRoutes = require("./routes/messageRoutes");
 
 app.use("/api/projects", projectRoutes);
 app.use("/api/messages", messageRoutes);
 
-
-// Dummy route
+// Test Route
 app.get("/", (req, res) => {
   res.send("Backend is running!");
 });
 
-// MongoDB connection
-mongoose.connect(process.env.MONGO_URL, {
+// ✅ MongoDB connection using correct env variable
+mongoose.connect(process.env.MONGO_URI, {
   useNewUrlParser: true,
   useUnifiedTopology: true
 }).then(() => {
@@ -31,7 +33,7 @@ mongoose.connect(process.env.MONGO_URL, {
   console.log("❌ MongoDB connection error:", err);
 });
 
-// Start the server
+// Server start
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
   console.log(`🚀 Server is running on port ${PORT}`);
