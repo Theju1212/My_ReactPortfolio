@@ -3,6 +3,11 @@ import React, { useState } from 'react';
 import './App.css';
 import { Link } from 'react-scroll';
 
+// 🧠 Import React Icons
+import { AiFillHome } from 'react-icons/ai';
+import { FaUser, FaGraduationCap, FaProjectDiagram, FaFileAlt, FaTools } from 'react-icons/fa';
+import { MdContactMail } from 'react-icons/md';
+
 import Home from './components/Home';
 import About from './components/About';
 import Education from './components/Education';
@@ -22,15 +27,15 @@ const App = () => {
 
   return (
     <div>
-      {/* ✅ Navigation Bar */}
+      {/* ✅ Navigation Bar with Icons */}
       <nav style={styles.nav}>
-        <Link style={styles.link} to="home" smooth={true} duration={500}>Home</Link>
-        <Link style={styles.link} to="about" smooth={true} duration={500}>About</Link>
-        <Link style={styles.link} to="education" smooth={true} duration={500}>Education</Link>
-        <Link style={styles.link} to="projects" smooth={true} duration={500}>Projects</Link>
-        <Link style={styles.link} to="resume" smooth={true} duration={500}>Resume</Link>
-        <Link style={styles.link} to="skills" smooth={true} duration={500}>Skills</Link>
-        <Link style={styles.link} to="contact" smooth={true} duration={500}>Contact</Link>
+        <Link style={styles.link} to="home" smooth={true} duration={500}><AiFillHome style={styles.icon} />Home</Link>
+        <Link style={styles.link} to="about" smooth={true} duration={500}><FaUser style={styles.icon} />About</Link>
+        <Link style={styles.link} to="education" smooth={true} duration={500}><FaGraduationCap style={styles.icon} />Education</Link>
+        <Link style={styles.link} to="projects" smooth={true} duration={500}><FaProjectDiagram style={styles.icon} />Projects</Link>
+        <Link style={styles.link} to="resume" smooth={true} duration={500}><FaFileAlt style={styles.icon} />Resume</Link>
+        <Link style={styles.link} to="skills" smooth={true} duration={500}><FaTools style={styles.icon} />Skills</Link>
+        <Link style={styles.link} to="contact" smooth={true} duration={500}><MdContactMail style={styles.icon} />Contact</Link>
       </nav>
 
       {/* ✅ Main Sections */}
@@ -73,7 +78,6 @@ const App = () => {
       <Resume />
       <Skills />
 
-      {/* ✅ More Info Section (Certifications + Internship + Achievements) */}
       <section id="more-info">
         <Certifications />
         <Internship />
@@ -101,7 +105,12 @@ const styles = {
     color: "#fff",
     cursor: "pointer",
     textDecoration: "none",
-    fontWeight: "bold"
+    fontWeight: "bold",
+    display: "flex",
+    alignItems: "center"
+  },
+  icon: {
+    marginRight: "6px"
   }
 };
 
