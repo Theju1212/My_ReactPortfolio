@@ -1,8 +1,7 @@
 import React from 'react';
 import './Home.css';
-import myPhoto from '../assets/my_photo.jpg';
+import myPhoto from '../assets/MY.jpg'; // ✅ Use the new photo
 import { ReactTyped } from 'react-typed';
-
 
 const Home = () => {
   return (
