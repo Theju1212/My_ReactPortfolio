@@ -126,6 +126,9 @@ My_ReactPortfolio/
 ![Projects](./screenshots/projects.png)
 ![More Projects](./screenshots/dprojects1.png)
 ![More Projects 2](./screenshots/dprojects2.png)
+![More Projects 2](./screenshots/wprojects1.png)
+![More Projects 2](./screenshots/wprojects2.png)
+
 
 ### 📄 Resume Section
 ![Resume Section](./screenshots/resume.png)
