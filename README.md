@@ -112,33 +112,33 @@ npm install
 npm start
 
 ### 🏠 Home Section
-![Home Section](/screenshots/home.png)
+![Home Section](./screenshots/home.png)
 
 ### 👩‍💼 About Me Section
-![About Section](/screenshots/about.png)
+![About Section](./screenshots/about.png)
 
 ### 🎓 Education Section
-![Education Section](/screenshots/education.png)
+![Education Section](./screenshots/education.png)
 
 ### 🛠️ Skills Section
-![Skills Section](/screenshots/skills.png)
+![Skills Section](./screenshots/skills.png)
 
 ### 🏆 Achievements Section
-![Achievements Section](/screenshots/achievements.png)
+![Achievements Section](./screenshots/achievements.png)
 
 ### 📜 Certifications Section
-![Certifications Section](/screenshots/certifications.png)
+![Certifications Section](./screenshots/certifications.png)
 
 ### 💼 Internships Section
-![Internships Section](/screenshots/internships.png)
+![Internships Section](./screenshots/internships.png)
 
 ### 💻 Projects Section
-![Projects](/screenshots/projects.png)
-![More Projects](/screenshots/dprojects1.png)
-![More Projects 2](/screenshots/dprojects2.png)
+![Projects](./screenshots/projects.png)
+![More Projects](./screenshots/dprojects1.png)
+![More Projects 2](./screenshots/dprojects2.png)
 
 ### 📄 Resume Section
-![Resume Section](/screenshots/resume.png)
+![Resume Section](./screenshots/resume.png)
 
 ### 📞 Contact Section
-![Contact Section](/screenshots/contact.png)
+![Contact Section](./screenshots/contact.png)
