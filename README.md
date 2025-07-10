@@ -100,16 +100,6 @@ My_ReactPortfolio/
 - ✅ Structured with clean code & components
 
 
----
-
-## 🚀 How to Run Locally
-
-### 🔹 Frontend (React)
-
-```bash
-cd client
-npm install
-npm start
 
 ### 🏠 Home Section
 ![Home Section](screenshots/home.png)
@@ -142,3 +132,13 @@ npm start
 
 ### 📞 Contact Section
 ![Contact Section](screenshots/contact.png)
+
+
+## 🚀 How to Run Locally
+
+### 🔹 Frontend (React)
+
+```bash
+cd client
+npm install
+npm start
