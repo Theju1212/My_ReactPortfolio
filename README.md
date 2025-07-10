@@ -112,33 +112,33 @@ npm install
 npm start
 
 ### 🏠 Home Section
-![Home Section](client/src/assets/screenshots/home.png)
+![Home Section](/screenshots/home.png)
 
 ### 👩‍💼 About Me Section
-![About Section](client/src/assets/screenshots/about.png)
+![About Section](/screenshots/about.png)
 
 ### 🎓 Education Section
-![Education Section](client/src/assets/screenshots/education.png)
+![Education Section](/screenshots/education.png)
 
 ### 🛠️ Skills Section
-![Skills Section](client/src/assets/screenshots/skills.png)
+![Skills Section](/screenshots/skills.png)
 
 ### 🏆 Achievements Section
-![Achievements Section](client/src/assets/screenshots/achievements.png)
+![Achievements Section](/screenshots/achievements.png)
 
 ### 📜 Certifications Section
-![Certifications Section](client/src/assets/screenshots/certifications.png)
+![Certifications Section](/screenshots/certifications.png)
 
 ### 💼 Internships Section
-![Internships Section](client/src/assets/screenshots/internships.png)
+![Internships Section](/screenshots/internships.png)
 
 ### 💻 Projects Section
-![Projects](client/src/assets/screenshots/projects.png)
-![More Projects](client/src/assets/screenshots/dprojects1.png)
-![More Projects 2](client/src/assets/screenshots/dprojects2.png)
+![Projects](/screenshots/projects.png)
+![More Projects](/screenshots/dprojects1.png)
+![More Projects 2](/screenshots/dprojects2.png)
 
 ### 📄 Resume Section
-![Resume Section](client/src/assets/screenshots/resume.png)
+![Resume Section](/screenshots/resume.png)
 
 ### 📞 Contact Section
-![Contact Section](client/src/assets/screenshots/contact.png)
+![Contact Section](/screenshots/contact.png)
